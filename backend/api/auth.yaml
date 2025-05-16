@@ -1,0 +1,129 @@
+openapi: 3.1.0
+info:
+  title: Signup
+  description: Signup
+  version: 1.0.0
+servers:
+  - url: 'http://localhost:8080/v1/'
+components:
+  securitySchemes:
+    cookieAuth:
+      type: apiKey
+      in: cookie
+      name: access_token
+paths:
+  /login:
+    get:
+      security:
+        - cookieAuth: [ ]
+      summary: Login
+      description: |
+        Get auth code url for OAuth content screen  
+        -> `/login?google={currentUrl}`
+      parameters:
+        - name: google
+          in: query
+          description: for google login
+          required: true
+          schema:
+            type: string
+            format: string
+      responses:
+        "200":
+          description: Get Auth code url
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  url:
+                    type: string
+                    example: "https://google.oauth.url.com/oauth_content_screen"
+  /logout:
+    get:
+      summary: Logout
+      description: |
+        Logout
+      parameters: []
+      responses:
+        "200":
+          description: Successfully logged out
+  /signup:
+    post:
+      description: |
+        Signup
+      summary: Signup
+      parameters: [ ]
+      requestBody:
+        description: Signup
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                nickname:
+                  type: string
+                  example: "Kopher"
+                position:
+                  type: string
+                  example: "backend"
+                career_year:
+                  type: integer
+                  example: 3
+                skills:
+                  type: array
+                  items:
+                    type: string
+                  example:
+                    - "go"
+                    - "java"
+              required:
+                - nickname
+                - position
+                - career_year
+                - skills
+      responses:
+        "201":
+          description: Successfully user created
+  /me:
+    get:
+      security:
+        - cookieAuth: [ ]
+      summary: Get User
+      description:  |  
+        You need a **cookie** with the key name **"access_token"**.  
+        If you do not have a cookie, please login first
+      parameters: [ ]
+      responses:
+        "200":
+          description: Successfully get user
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  sub:
+                    type: string
+                    example: "198uuash9vkjahd13asd"
+                  nickname:
+                    type: string
+                    example: "topu-user"
+                  position:
+                    type: string
+                    example: "backend"
+                  careerYear:
+                    type: number
+                    example: 3
+                  skills:
+                    type: array
+                    items:
+                      type: string
+                    example:
+                      - "go"
+                      - "typescript"
+                  transient:
+                    type: boolean
+                    example: false
+                  profileUrl:
+                    type: string
+                    example: "https://djsalkdjlio123.com"

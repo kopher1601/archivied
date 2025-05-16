@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  mysql:
+    image: mysql:8
+    container_name: topu-db
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: topu
+      MYSQL_USER: topu
+      MYSQL_PASSWORD: topu
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql-data:/var/lib/mysql
+  topu:
+    image: topu
+    container_name: topu
+    ports:
+      - 8080:8080
+    expose:
+      - 8080
+    depends_on:
+      - mysql
+
+volumes:
+  mysql-data:

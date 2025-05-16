@@ -1,0 +1,7 @@
+.idea
+
+# entgo
+/ent/*
+!/ent/schema/
+!/ent/migrate/
+!/ent/generate.go
