@@ -1,0 +1,10 @@
+[tools]
+java = "corretto-21.0.3.9.1"
+
+[tasks.up]
+description = "Starts spring boot"
+run = "./gradlew bootRun"
+
+[tasks.docker-up]
+description = "Build docker image & run container"
+run = "docker build -t topu_backend . && docker-compose up -d"

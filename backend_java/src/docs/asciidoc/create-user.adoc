@@ -1,0 +1,8 @@
+==== http request
+include::{snippets}/create-user/http-request.adoc[]
+
+==== request fields
+include::{snippets}/create-user/request-fields.adoc[]
+
+==== http response
+include::{snippets}/create-user/http-response.adoc[]

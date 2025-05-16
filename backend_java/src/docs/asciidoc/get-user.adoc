@@ -1,0 +1,15 @@
+==== http request
+
+include::{snippets}/get-user/http-request.adoc[]
+
+==== path parameter
+
+include::{snippets}/get-user/path-parameters.adoc[]
+
+==== http response
+
+include::{snippets}/get-user/http-response.adoc[]
+
+==== response fields
+
+include::{snippets}/get-user/response-fields.adoc[]

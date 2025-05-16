@@ -1,0 +1,32 @@
+### Create recruitment
+POST http://localhost:8080/recruitments
+Content-Type: application/json
+Cookie: SESSION=eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiIxIiwic3ViIjoiMTA3MTU2OTExMjI1NDA0NjY0NjE3IiwiZXhwIjoxNzI3OTQ5ODcwLCJpYXQiOjE3Mjc5NDgwNzB9.mIr07t2Jj2b1nSn3kiuWLqCs5iXehnSv7DeiVz-rlcAeyc01FYDx60rLt26kGIEO0N6Fxfou6ZNrHeLWSXMGUQ
+
+{
+  "recruitmentCategories": "PROJECT",
+  "progressMethods": "ALL",
+  "techStacks": [
+    "Java",
+    "Spring"
+  ],
+  "recruitmentPositions": [
+    "BackendEngineer",
+    "Infra"
+  ],
+  "numberOfPeople": 3,
+  "progressPeriod": 3,
+  "recruitmentDeadline": "2024-12-31",
+  "contract": "test@test.com",
+  "subject": "新しいサービス開発に携わりたい方募集",
+  "content": "実はSES、笑"
+}
+
+### Get Recruitment
+GET http://localhost:8080/recruitments/1
+Content-Type: application/json
+
+### Get Recruitments
+GET http://localhost:8080/recruitments/query?page=1&size=20&techStacks=Java&positions=Front&progressMethod=ONLINE
+Content-Type: application/json
+

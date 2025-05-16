@@ -1,0 +1,11 @@
+==== query parameter
+include::{snippets}/get-recruitments/query-parameters.adoc[]
+
+==== http request
+include::{snippets}/get-recruitments/http-request.adoc[]
+
+==== http response
+include::{snippets}/get-recruitments/http-response.adoc[]
+
+==== response fields
+include::{snippets}/get-recruitments/response-fields.adoc[]

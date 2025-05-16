@@ -1,0 +1,15 @@
+==== http request
+
+include::{snippets}/get-user-fail/http-request.adoc[]
+
+==== path parameter
+
+include::{snippets}/get-user-fail/path-parameters.adoc[]
+
+==== http response
+
+include::{snippets}/get-user-fail/http-response.adoc[]
+
+==== response fields
+
+include::{snippets}/get-user-fail/response-fields.adoc[]

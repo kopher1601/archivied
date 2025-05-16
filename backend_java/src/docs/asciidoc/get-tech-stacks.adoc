@@ -1,0 +1,6 @@
+==== http request
+include::{snippets}/get-tech-stacks/http-request.adoc[]
+==== http response
+include::{snippets}/get-tech-stacks/http-response.adoc[]
+==== response fields
+include::{snippets}/get-tech-stacks/response-fields.adoc[]

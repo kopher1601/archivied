@@ -1,0 +1,8 @@
+==== http request
+include::{snippets}/delete-recruitment/http-request.adoc[]
+
+==== path parameter
+include::{snippets}/delete-recruitment/path-parameters.adoc[]
+
+==== http response
+include::{snippets}/delete-recruitment/http-response.adoc[]

@@ -1,0 +1,69 @@
+= Topu Service
+:doctype: book
+:icons: font
+:source-highlighter: highlightjs
+:toc: left
+:toclevels: 3
+:sectlinks:
+
+== Recruitment
+
+=== Post recruitment
+
+include::post-recruitment.adoc[]
+
+---
+
+=== Delete recruitment by id
+
+include::delete-recruitment.adoc[]
+
+---
+=== Get Recruitments
+
+include::get-recruitments.adoc[]
+
+---
+
+=== Get Recruitment by id
+
+include::get-recruitment.adoc[]
+
+---
+
+=== Update Recruitment
+
+include::update-recruitment.adoc[]
+
+=== Get tech stacks
+
+include::get-tech-stacks.adoc[]
+
+=== Get Positions
+
+include::get-positions.adoc[]
+
+---
+
+== User
+
+=== Get user by id
+
+include::get-user.adoc[]
+
+---
+
+=== Get user by id - fail
+
+include::get-user-fail.adoc[]
+
+---
+
+=== Create user - first login
+
+include::create-user.adoc[]
+
+---
+
+
+

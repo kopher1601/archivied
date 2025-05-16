@@ -1,0 +1,6 @@
+==== http request
+include::{snippets}/get-positions/http-request.adoc[]
+==== http response
+include::{snippets}/get-positions/http-response.adoc[]
+==== response fields
+include::{snippets}/get-positions/response-fields.adoc[]

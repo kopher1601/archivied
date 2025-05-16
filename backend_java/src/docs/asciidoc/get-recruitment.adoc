@@ -1,0 +1,12 @@
+
+==== path parameter
+include::{snippets}/get-recruitment/path-parameters.adoc[]
+
+==== http request
+include::{snippets}/get-recruitment/http-request.adoc[]
+
+==== http response
+include::{snippets}/get-recruitment/http-response.adoc[]
+
+==== response fields
+include::{snippets}/get-recruitment/response-fields.adoc[]
